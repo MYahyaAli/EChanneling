@@ -43,7 +43,7 @@
         <!-- Body -->
         <!-- Practitioner Accounts Waiting for Approval -->
         <div class="container">
-            <h2 class="d-flex text-align-center">Practitioner Verfication</h2>
+            <h2 class="text-center">Practitioner Verfication</h2>
             <div class="row">
                 <div class="col-md-12 mt-5">
                     <div class="card border border-dark">
@@ -54,7 +54,6 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-
                                         <th>Account ID</th>
                                         <th>First Name</th>
                                         <th>Last Name</th>
@@ -62,13 +61,10 @@
                                         <th>Account Type</th>
                                         <th>Approval</th>
                                         <th>Removal</th>
-                                        
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                     <?php
-
                                         session();
 
                                         $adsModel = new \App\Models\userModel;
