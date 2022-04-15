@@ -55,7 +55,7 @@
     <div class="container">
         <div class="box1">
             <div class="card" >
-                <img src="<?= base_url('/assets/images/cat.jpg')?>" width="250px" height="400px">
+                <img src="<?= base_url('/assets/images/def.jpg')?>" width="250px" height="400px">
                 <div class="card-body">
                     <h5 class="card-title">Doctor Name</h5>
                     <p class="card-text">Qualifications</p>

@@ -59,7 +59,7 @@
                 ?>
         <div class="box1">
             <div class="card" >
-                <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">                
+                <img src="<?= base_url('/assets/images/def.jpg')?>" width="253px" height="400px">                
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row -> fullname?></h5>
                     <p class="card-text"><?php echo $row -> practitionerid?></p>
