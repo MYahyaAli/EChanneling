@@ -85,240 +85,360 @@
       <!--Create Profile content-->
       <div id="Profile" class="tabcontent">
         <div class="container">
-            <h2 class="my-2">Schedule your Appointements </h2>
-        <!--starting of the form and table-->
-            <form action="<?php echo site_url('Appointment/create')?>" method="POST">
-                    <!-- Hospital -->
-                  <div class="row my-4">
-                      <div class="col-md-2">
-                          <label for="hospital"> Hospital/Center: </label>
-                      </div>
-                      <div class="col-md-5">
-                          <select id="hospital" name="hospital">
-                            <option value="Allergy and Asthma center-Colombo 05">Allergy and Asthma center-Colombo 05</option>
-                            <option value="Asia Hospital-Kotte">Asia Hospital-Kotte</option>
-                            <option value="Asia Hospital-Maharagama">Asia Hospital-Maharagama</option>
-                            <option value="Asiri Central-Colombo 10">Asiri Central-Colombo 10</option>
-                            <option value="Asiri Surgical-Colombo 05">Asiri Surgical-Colombo 05</option>
-                            <option value="Asiri Hospital-Galle">Asiri Hospital-Galle</option>
-                            <option value="Asiri Hospital-Kandy">Asiri Hospital-Kandy</option>
-                            <option value="Blue Cross Medical Center -Rajagiriya">Blue Cross Medical Center -Rajagiriya</option>
-                            <option value="CDEM Hospital-Colombo 10">CDEM Hospital-Colombo 10</option>
-                            <option value="Ceymed Healthcare Services-Nugegoda">Ceymed Healthcare Services-Nugegoda</option>
-                            <option value="Child Eye (Pvt)Ltd-Rajagiriya">Child Eye (Pvt)Ltd-Rajagiriya</option>
-                            <option value="Dental Square-Colombo 06">Dental Square-Colombo 06</option>
-                            <option value="Dr.Neville Fernando Teaching Hospital-Malabe">Dr.Neville Fernando Teaching Hospital-Malabe</option>
-                            <option value="Durdans Hospital-Colombo 03">Durdans Hospital-Colombo 03</option>
-                            <option value="Durdans Medical Center-Negombo">Durdans Medical Center-Negombo</option>
-                            <option value="Durdans Medical Center-Anuradhapura">Durdans Medical Center-Anuradhapura</option>
-                            <option value="Durdans Medical Center-Moratuwa">Durdans Medical Center-Moratuwa</option>
-                            <option value="Family Dental Services-Colombo 03">Family Dental Services-Colombo 03</option>
-                            <option value="Family Planning Association-Colombo 07">Family Planning Association-Colombo 07</option>
-                            <option value="Golden Key Hospital-Rajagiriya">Golden Key Hospital-Rajagiriya</option>
-                            <option value="Heart Aird Center-Colombo 07">Heart Aird Center-Colombo 07</option>
-                            <option value="Hemas Hospital-Thalawatugoda">Hemas Hospital-Thalawatugoda</option>
-                            <option value="Hemas Hospital-Wattala">Hemas Hospital-Wattala</option>
-                            <option value="Imperial Healthcare-Colombo 07">Imperial Healthcare-Colombo 07</option>
-                            <option value="Kings Hospital-Colombo 05">Kings Hospital-Colombo 05</option>
-                            <option value="Lanka Hospital-Colombo 05">Lanka Hospital-Colombo 05</option>
-                            <option value="LEEDS Healthcare-Thalapathpitiya">LEEDS Healthcare-Thalapathpitiya</option>
-                            <option value="Lush Skin Clinique-Battaramulla">Lush Skin Clinique-Battaramulla</option>
-                            <option value="MediHelp Hospital-Horana">MediHelp Hospital-Horana</option>
-                            <option value="MediHelp Hospital-Beruwala">MediHelp Hospital-Beruwala</option>
-                            <option value="MediHelp Hospital-Piliyandala">MediHelp Hospital-Piliyandala</option>
-                            <option value="Metro Medicare-Pitakotte">Metro Medicare-Pitakotte</option>
-                            <option value="Metro Medicare-Kurunegala">Metro Medicare-Kurunegala</option>
-                            <option value="Nawaloka Hospital-Colombo">Nawaloka Hospital-Colombo</option>
-                            <option value="Nawaloka Hospital-Negombo">Nawaloka Hospital-Negombo</option>
-                            <option value="Nawaloka Medical Center-Battaramulla">Nawaloka Medical Center-Battaramulla</option>
-                            <option value="Nawaloka Medical Center-Kiribathgoda">Nawaloka Medical Center-Kiribathgoda</option>
-                            <option value="Nawaloka Medical Center-Mt.Lavinia">Nawaloka Medical Center-Mt.Lavinia</option>
-                            <option value="Nawaloka Medical Center-Panadura">Nawaloka Medical Center-Panadura</option>
-                            <option value="Ninewells Hospital">Ninewells Hospital</option>
-                            <option value="Pannipitiya Private Hospital">Pannipitiya Private Hospital</option>
-                            <option value="Royal Hospital-Colombo 06">Royal Hospital-Colombo 06</option>
-                            <option value="Santa Dora Hospital-Battaramulla">Santa Dora Hospital-Battaramulla</option>
-                            <option value="Specialist Dermatology(Skin) Clinic-Thalawathugoda">Specialist Dermatology(Skin) Clinic-Thalawathugoda</option>
-                            <option value="Suwasewana Hospital-Awissawella">Suwasewana Hospital-Awissawella</option>
-                            <option value="Vision Care Opticals-Colombo">Vision Care Opticals-Colombo</option>
-                            <option value="Vision Care Opticals-Mt.Lavinia">Vision Care Opticals-Mt.Lavinia</option>
-                            <option value="Vision Care Opticals-Negombo">Vision Care Opticals-Negombo</option>
-                            <option value="Vision Care Opticals-Panadura">Vision Care Opticals-Panadura</option>
-                            <option value="Vision Care Opticals-Ratnapura">Vision Care Opticals-Ratnapura</option>
-                            <option value="Western Hospital-Colombo 08">Western Hospital-Colombo 08</option>
-                            <option value="Zenith Dentistry-Dehiwala">Zenith Dentistry-Dehiwala</option>
+              <h2 class="my-2">Schedule your Appointements </h2>
+          <!--starting of the form and table-->
+              <form action="<?php echo site_url('Appointment/create')?>" method="POST">
+                      <!-- Hospital -->
+                    <div class="row my-4">
+                        <div class="col-md-2">
+                            <label for="hospital"> Hospital/Center: </label>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="hospital" name="hospital">
+                              <option value="Allergy and Asthma center-Colombo 05">Allergy and Asthma center-Colombo 05</option>
+                              <option value="Asia Hospital-Kotte">Asia Hospital-Kotte</option>
+                              <option value="Asia Hospital-Maharagama">Asia Hospital-Maharagama</option>
+                              <option value="Asiri Central-Colombo 10">Asiri Central-Colombo 10</option>
+                              <option value="Asiri Surgical-Colombo 05">Asiri Surgical-Colombo 05</option>
+                              <option value="Asiri Hospital-Galle">Asiri Hospital-Galle</option>
+                              <option value="Asiri Hospital-Kandy">Asiri Hospital-Kandy</option>
+                              <option value="Blue Cross Medical Center -Rajagiriya">Blue Cross Medical Center -Rajagiriya</option>
+                              <option value="CDEM Hospital-Colombo 10">CDEM Hospital-Colombo 10</option>
+                              <option value="Ceymed Healthcare Services-Nugegoda">Ceymed Healthcare Services-Nugegoda</option>
+                              <option value="Child Eye (Pvt)Ltd-Rajagiriya">Child Eye (Pvt)Ltd-Rajagiriya</option>
+                              <option value="Dental Square-Colombo 06">Dental Square-Colombo 06</option>
+                              <option value="Dr.Neville Fernando Teaching Hospital-Malabe">Dr.Neville Fernando Teaching Hospital-Malabe</option>
+                              <option value="Durdans Hospital-Colombo 03">Durdans Hospital-Colombo 03</option>
+                              <option value="Durdans Medical Center-Negombo">Durdans Medical Center-Negombo</option>
+                              <option value="Durdans Medical Center-Anuradhapura">Durdans Medical Center-Anuradhapura</option>
+                              <option value="Durdans Medical Center-Moratuwa">Durdans Medical Center-Moratuwa</option>
+                              <option value="Family Dental Services-Colombo 03">Family Dental Services-Colombo 03</option>
+                              <option value="Family Planning Association-Colombo 07">Family Planning Association-Colombo 07</option>
+                              <option value="Golden Key Hospital-Rajagiriya">Golden Key Hospital-Rajagiriya</option>
+                              <option value="Heart Aird Center-Colombo 07">Heart Aird Center-Colombo 07</option>
+                              <option value="Hemas Hospital-Thalawatugoda">Hemas Hospital-Thalawatugoda</option>
+                              <option value="Hemas Hospital-Wattala">Hemas Hospital-Wattala</option>
+                              <option value="Imperial Healthcare-Colombo 07">Imperial Healthcare-Colombo 07</option>
+                              <option value="Kings Hospital-Colombo 05">Kings Hospital-Colombo 05</option>
+                              <option value="Lanka Hospital-Colombo 05">Lanka Hospital-Colombo 05</option>
+                              <option value="LEEDS Healthcare-Thalapathpitiya">LEEDS Healthcare-Thalapathpitiya</option>
+                              <option value="Lush Skin Clinique-Battaramulla">Lush Skin Clinique-Battaramulla</option>
+                              <option value="MediHelp Hospital-Horana">MediHelp Hospital-Horana</option>
+                              <option value="MediHelp Hospital-Beruwala">MediHelp Hospital-Beruwala</option>
+                              <option value="MediHelp Hospital-Piliyandala">MediHelp Hospital-Piliyandala</option>
+                              <option value="Metro Medicare-Pitakotte">Metro Medicare-Pitakotte</option>
+                              <option value="Metro Medicare-Kurunegala">Metro Medicare-Kurunegala</option>
+                              <option value="Nawaloka Hospital-Colombo">Nawaloka Hospital-Colombo</option>
+                              <option value="Nawaloka Hospital-Negombo">Nawaloka Hospital-Negombo</option>
+                              <option value="Nawaloka Medical Center-Battaramulla">Nawaloka Medical Center-Battaramulla</option>
+                              <option value="Nawaloka Medical Center-Kiribathgoda">Nawaloka Medical Center-Kiribathgoda</option>
+                              <option value="Nawaloka Medical Center-Mt.Lavinia">Nawaloka Medical Center-Mt.Lavinia</option>
+                              <option value="Nawaloka Medical Center-Panadura">Nawaloka Medical Center-Panadura</option>
+                              <option value="Ninewells Hospital">Ninewells Hospital</option>
+                              <option value="Pannipitiya Private Hospital">Pannipitiya Private Hospital</option>
+                              <option value="Royal Hospital-Colombo 06">Royal Hospital-Colombo 06</option>
+                              <option value="Santa Dora Hospital-Battaramulla">Santa Dora Hospital-Battaramulla</option>
+                              <option value="Specialist Dermatology(Skin) Clinic-Thalawathugoda">Specialist Dermatology(Skin) Clinic-Thalawathugoda</option>
+                              <option value="Suwasewana Hospital-Awissawella">Suwasewana Hospital-Awissawella</option>
+                              <option value="Vision Care Opticals-Colombo">Vision Care Opticals-Colombo</option>
+                              <option value="Vision Care Opticals-Mt.Lavinia">Vision Care Opticals-Mt.Lavinia</option>
+                              <option value="Vision Care Opticals-Negombo">Vision Care Opticals-Negombo</option>
+                              <option value="Vision Care Opticals-Panadura">Vision Care Opticals-Panadura</option>
+                              <option value="Vision Care Opticals-Ratnapura">Vision Care Opticals-Ratnapura</option>
+                              <option value="Western Hospital-Colombo 08">Western Hospital-Colombo 08</option>
+                              <option value="Zenith Dentistry-Dehiwala">Zenith Dentistry-Dehiwala</option>
 
-                          </select>
-                      </div>
-                  </div>
-                  
-                  <div class="row g-3 align-items-center my-3">
-                      <div class="col-md-2">
-                        <label  class="col-form-label">Doctor ID</label>
-                      </div>
-                      <div class="col-md-5">
-                          <input type="text" name="practitionerid" class="form-control" required>
-                      </div>
-                      <div class="col-md-2">
-                          <span id="passwordHelpInline" class="form-text">
-                          Must be 5 characters long.
-                          </span>
-                      </div>
-                  </div>
-
-                    <!-- dates -->
-                  <div class="row my-4">
-                    <div class="col-md-2">
-                    <label for="date"> Available Date: </label>
-                    </div>
-                    <div class="col-md-5">
-                    <input type="date" id="date" name="appointdate">
-                    </div> 
-                  </div>
-                
-                  <!-- time -->
-                  <div class="row my-2">
-                    <div class="col-md-2">
-                    <label for="time"> Available Time Slot: </label>
-                    </div>
-                    <div class="col-md-5">
-                    <select id="time" name="appointtime">
-                      <option value="6.00am - 8.00am">6.00am - 8.00am</option>
-                      <option value="8.00am - 10.00am">8.00am - 10.00am</option>
-                      <option value="10.00am - 12.00pm">10.00am - 12.00pm</option>
-                      <option value="12.00pm - 2.00pm">12.00pm - 2.00pm</option>
-                      <option value="2.00pm - 4.00pm">2.00pm - 4.00pm</option>
-                      <option value="4.00pm - 6.00pm">4.00pm - 6.00pm</option>
-                      <option value="6.00pm - 8.00pm">6.00pm - 8.00pm</option>
-                      <option value="8.00pm - 10.00pm">8.00pm - 10.00pm</option>
-                    </select>
-                    </div>
-                  </div>
-
-                  <!-- patient number -->
-                  <div class="row my-2">
-                    <div class="col-md-2">
-                    <label for="num">No of People: </label>
-                    </div>
-                    <div class="col-md-5">
-                    <select id="num" name="patientnum">
-                      <option value="10">10</option>
-                      <option value="15">15</option>
-                      <option value="20">20</option>
-                      <option value="25">25</option>
-                      <option value="30">30</option>
-                      <option value="35">35</option>
-                      <option value="40">40</option>
-                    </select>
-                    </div>
-                  </div>
-
-                  <!-- fee -->
-                  <div class="row my-2">
-                    <div class="col-md-2">
-                    <label for="fee">Fee: </label>
-                    </div>
-                    <div class="col-md-5">
-                    <select name="fee" id="fee">
-                      <option value="LKR 1500.00">LKR 1500.00</option>
-                      <option value="LKR 1800.00">LKR 1800.00</option>
-                      <option value="LKR 2100.00">LKR 2100.00</option>
-                      <option value="LKR 2500.00">LKR 2500.00</option>
-                      <option value="LKR 3000.00">LKR 3000.00</option>
-                      <option value="LKR 3500.00">LKR 3500.00</option>
-                      <option value="LKR 4000.00">LKR 4000.00</option>
-                    </select>
-                    </div>
-                  </div>
-                  <br>
-                  <br>
-
-                  <div class="text-center p-3">
-                    <button class="btn btn-success profile-button btn-lg">Submit</button>    
-                  </div>
-              
-            </form>
-                    <!--starting of the table-->
-            <!-- <table id="table" class="tabel">
-              <tr>
-                <th scope="col">Hospital/Center</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time Slots</th>
-                <th scope="col">No of People</th>
-                <th scope="col">Fee</th>
-              </tr>
-            </table> -->
-          <div class="container">
-              <div class="row">
-                    <div class="col-md-12 mt-5">
-                        <div class="card border border-dark mb-3 mt-5">
-                            <div class="card-header">
-                                <h4>My Schedule</h4>
-                            </div>
-                            <div class="card-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Hospital/Channeling Center</th>
-                                            <th>Doctor ID</th>
-                                            <th>Appointment Date</th>
-                                            <th>Appointment Times</th>
-                                            <th>No. of Patients</th>
-                                            <th>Fee in LKR</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-
-                                            session();
-
-                                            $adsModel = new \App\Models\PractitionerScheduleModel;
-                                            $user = session() -> get('id'); // Gets the user ID from the session
-
-                                            // Runs query to get approved ads of the user
-                                            $query = $adsModel -> query("SELECT * FROM PractitionerSchedule"); 
-
-                                            foreach ($query -> getResult() as $row){
-
-                                        ?>
-                                            <tr>
-                                                <td><?php echo $row -> id ?></td>
-                                                <td><?php echo $row -> hospital ?></td>
-                                                <td><?php echo $row -> practitionerid ?></td>
-                                                <td><?php echo $row -> appointdate ?></td>
-                                                <td><?php echo $row -> appointtime ?></td>
-                                                <td><?php echo $row -> patientnum ?></td>
-                                                <td><?php echo $row -> fee ?></td>
-                                                
-                                                <!-- <td>
-                                                    <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-primary float-end btn-sm">View</a>
-                                                </td>
-                                                <td>
-                                                    <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-success float-end btn-sm">Appoint</a>
-                                                </td>
-                                                <td>
-                                                    <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-danger float-end btn-sm">Delete</a>
-                                                </td> -->
-                                                
-                                            </tr>
-                                        <?php 
-                                        } 
-                                        ?>
-
-                                    </tbody>
-                                </table>
-                            </div>
+                            </select>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- end of tabel -->
+                    
+                    <div class="row g-3 align-items-center my-3">
+                        <div class="col-md-2">
+                          <label  class="col-form-label">Doctor ID</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" name="practitionerid" class="form-control" required>
+                        </div>
+                        <div class="col-md-2">
+                            <span id="passwordHelpInline" class="form-text">
+                            Must be 5 characters long.
+                            </span>
+                        </div>
+                    </div>
+
+                      <!-- dates -->
+                    <div class="row my-4">
+                      <div class="col-md-2">
+                      <label for="date"> Available Date: </label>
+                      </div>
+                      <div class="col-md-5">
+                      <input type="date" id="date" name="appointdate">
+                      </div> 
+                    </div>
+                  
+                    <!-- time -->
+                    <div class="row my-2">
+                      <div class="col-md-2">
+                      <label for="time"> Available Time Slot: </label>
+                      </div>
+                      <div class="col-md-5">
+                      <select id="time" name="appointtime">
+                        <option value="6.00am - 8.00am">6.00am - 8.00am</option>
+                        <option value="8.00am - 10.00am">8.00am - 10.00am</option>
+                        <option value="10.00am - 12.00pm">10.00am - 12.00pm</option>
+                        <option value="12.00pm - 2.00pm">12.00pm - 2.00pm</option>
+                        <option value="2.00pm - 4.00pm">2.00pm - 4.00pm</option>
+                        <option value="4.00pm - 6.00pm">4.00pm - 6.00pm</option>
+                        <option value="6.00pm - 8.00pm">6.00pm - 8.00pm</option>
+                        <option value="8.00pm - 10.00pm">8.00pm - 10.00pm</option>
+                      </select>
+                      </div>
+                    </div>
+
+                    <!-- patient number -->
+                    <div class="row my-2">
+                      <div class="col-md-2">
+                      <label for="num">No of People: </label>
+                      </div>
+                      <div class="col-md-5">
+                      <select id="num" name="patientnum">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                      </select>
+                      </div>
+                    </div>
+
+                    <!-- fee -->
+                    <div class="row my-2">
+                      <div class="col-md-2">
+                      <label for="fee">Fee: </label>
+                      </div>
+                      <div class="col-md-5">
+                      <select name="fee" id="fee">
+                        <option value="LKR 1500.00">LKR 1500.00</option>
+                        <option value="LKR 1800.00">LKR 1800.00</option>
+                        <option value="LKR 2100.00">LKR 2100.00</option>
+                        <option value="LKR 2500.00">LKR 2500.00</option>
+                        <option value="LKR 3000.00">LKR 3000.00</option>
+                        <option value="LKR 3500.00">LKR 3500.00</option>
+                        <option value="LKR 4000.00">LKR 4000.00</option>
+                      </select>
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="text-center p-3">
+                      <button class="btn btn-success profile-button btn-lg">Submit</button>    
+                    </div>
+                
+              </form>
+                      <!--starting of the table-->
+              <!-- <table id="table" class="tabel">
+                <tr>
+                  <th scope="col">Hospital/Center</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time Slots</th>
+                  <th scope="col">No of People</th>
+                  <th scope="col">Fee</th>
+                </tr>
+              </table> -->
+            <div class="container">
+                <div class="row">
+                      <div class="col-md-12 mt-5">
+                          <div class="card border border-dark mb-3 mt-5">
+                              <div class="card-header">
+                                  <h4>My Schedule</h4>
+                              </div>
+                              <div class="card-body">
+                                  <table class="table table-bordered">
+                                      <thead>
+                                          <tr>
+                                              <th>ID</th>
+                                              <th>Hospital/Channeling Center</th>
+                                              <th>Doctor ID</th>
+                                              <th>Appointment Date</th>
+                                              <th>Appointment Times</th>
+                                              <th>No. of Patients</th>
+                                              <th>Fee in LKR</th>
+                                              
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <?php
+
+                                              session();
+
+                                              $adsModel = new \App\Models\PractitionerScheduleModel;
+                                              $user = session() -> get('id'); // Gets the user ID from the session
+
+                                              // Runs query to get approved ads of the user
+                                              $query = $adsModel -> query("SELECT * FROM PractitionerSchedule"); 
+
+                                              foreach ($query -> getResult() as $row){
+
+                                          ?>
+                                              <tr>
+                                                  <td><?php echo $row -> id ?></td>
+                                                  <td><?php echo $row -> hospital ?></td>
+                                                  <td><?php echo $row -> practitionerid ?></td>
+                                                  <td><?php echo $row -> appointdate ?></td>
+                                                  <td><?php echo $row -> appointtime ?></td>
+                                                  <td><?php echo $row -> patientnum ?></td>
+                                                  <td><?php echo $row -> fee ?></td>
+                                                  
+                                                  <!-- <td>
+                                                      <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-primary float-end btn-sm">View</a>
+                                                  </td>
+                                                  <td>
+                                                      <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-success float-end btn-sm">Appoint</a>
+                                                  </td>
+                                                  <td>
+                                                      <a href="<?php echo base_url(''.$row -> id)?>" class="btn btn-outline-danger float-end btn-sm">Delete</a>
+                                                  </td> -->
+                                                  
+                                              </tr>
+                                          <?php 
+                                          } 
+                                          ?>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- end of tabel -->
+          </div>
         </div>
       </div>
-    
-  </div>
+    </div>
+
+    <div class="main">
+      <div id="Reports" class="tabcontent">
+        <div class="container">
+        <div class="row">
+            <!-- <br /> -->
+            
+          <h2 align="center" class="py-5">Request Reports</h2>
+              <!-- chat user -->
+              <div class="col-md-3">
+                  <div class="panel panel-default" style="height: 400px; overflow-y: scroll;">
+                  <div class="panel-heading">Chat with User</div>
+                  <div class="panel-body" id="chat_user_area">
+
+                  </div>
+                  <input type="hidden" name="hidden_receiver_id_array" id="hidden_receiver_id_array" />
+                  </div>
+              </div>
+              <!-- chat area -->
+              <div class="col-md-7">
+                  <div class="panel panel-default">
+                  <div class="panel-heading">Chat Area</div>
+                  <div class="panel-body">
+                    <div id="chat_header">
+                      <h2 align="center" style=" padding-bottom:16px;">
+                        <span id="dynamic_title">Welcome 
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="chat_body" style="height:406px; overflow-y: scroll;">
+
+                    </div>
+                    <div id="chat_footer">
+                      <div class="form-group">
+                          
+                      </div>
+                      <div class="form-group" align="right">
+                          
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="row">
+            
+          <!-- <h2 align="center" class="py-5">Request Reports</h2> -->
+            <!-- search user -->
+            <div class="col-md-6">
+                <div class="panel panel-default" style="height: 300px; overflow-y: scroll;">
+                  <div class="panel-heading">Search User</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                          
+                      </div>
+                      <div class="col-md-4">
+                          
+                      </div>
+                    </div>
+                    
+                    <div id="search_user_area">
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+                <!-- notification -->
+                <div class="col-md-4 ">
+                  <div class="panel panel-default" style="height: 380px; overflow-y: scroll;">
+                    <div class="panel-heading">Nofication</div>
+                    <div class="panel-body" id="notification_area">  
+                      
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <!-- <div class="row">
+             <br /> 
+              <!-- chat
+              <div class="col-md-3">
+                  <div class="panel panel-default" style="height: 400px; overflow-y: scroll;">
+                  <div class="panel-heading">Chat with User</div>
+                  <div class="panel-body" id="chat_user_area">
+
+                  </div>
+                  <input type="hidden" name="hidden_receiver_id_array" id="hidden_receiver_id_array" />
+                  </div>
+              </div>
+              <!-- chat area
+              <div class="col-md-7">
+                  <div class="panel panel-default">
+                  <div class="panel-heading">Chat Area</div>
+                  <div class="panel-body">
+                    <div id="chat_header">
+                      <h2 align="center" style=" padding-bottom:16px;">
+                        <span id="dynamic_title">Welcome 
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="chat_body" style="height:406px; overflow-y: scroll;">
+
+                    </div>
+                    <div id="chat_footer">
+                      <div class="form-group">
+                          
+                      </div>
+                      <div class="form-group" align="right">
+                          
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
   <!-- Footer -->
 
@@ -383,6 +503,126 @@
           // return false;
         // }
 
+
+        // chat
+        $(document).ready(function(){
+
+        function loading()
+        {
+          var output = '<div align="center"><br /><br /><br />';
+          output += '<img src="<?php echo base_url(); ?>asset/loading.gif" /> Please wait...</div>';
+          return output;
+        }
+
+        $(document).on('click', '#search_button', function(){
+        var search_query = $.trim($('#search_user').val());
+        $('#search_user_area').html('');
+        
+        if(search_query != '')
+        {
+          $.ajax({
+          url:"<?php echo base_url(); ?>chat/search_user",
+          method:"POST",
+          data:{search_query:search_query},
+          dataType:"json",
+          beforeSend:function()
+          {
+            $('#search_user_area').html(loading());
+            $('#search_button').attr('disabled', 'disabled');
+          },
+          success:function(data)
+          {
+            $('#search_button').attr('disabled', false);
+            var output = '<hr />';
+            var send_userid = "";
+            if(data.length > 0)
+            {
+            for(var count = 0; count < data.length; count++)
+            {
+              output += '<div class="row">';
+              output += '<div class="col-md-7"><img src="'+data[count].profile_picture+'" class="img-circle" width="40" /> <small>'+data[count].first_name+' '+data[count].last_name+'</small></div>';
+              if(data[count].is_request_send == 'yes')
+              {
+              output += '<div class="col-md-5"><button type="button" name="request_button" class="btn btn-warning btn-xs">Request Sended</button></div>';
+              }
+              else
+              {
+              output += '<div class="col-md-5"><button type="button" name="request_button" class="btn btn-success btn-xs request_button" id="request_button'+data[count].user_id+'" data-receiver_userid="'+data[count].user_id+'" data-send_userid="'+send_userid+'">Send Request</button></div>';
+              }
+              output += '</div><hr />';
+            }
+            }
+            else
+            {
+              output += '<div align="center"><b>No Data Found</b></div>';
+            }
+              output += '</div>';
+              $('#search_user_area').html(output);
+          }
+          })
+        }
+        });
+
+        $(document).on('click', '.request_button', function(){
+        var id = $(this).attr('id');
+        var receiver_userid = $(this).data('receiver_userid');
+        var send_userid = $(this).data('send_userid');
+        $.ajax(
+          {
+            url:"<?php echo base_url(); ?>chat/send_request",
+            method:"POST",
+            data:{receiver_userid:receiver_userid, send_userid:send_userid},
+            beforeSend:function()
+            {
+            $('#'+id).attr('disabled', 'disabled');
+            },
+            success:function(data)
+            {
+            $('#'+id).attr('disabled', false);
+            $('#'+id).removeClass('btn-success');
+            $('#'+id).addClass('btn-warning');
+            $('#'+id).text('Request Sended');
+            }
+          })
+        })
+
+        load_notification();
+
+        function load_notification()
+        {
+        $.ajax({
+          url:"<?php echo base_url(); ?>chat/load_notification",
+          method:"POST",
+          data:{action:'load_notification'},
+          dataType:"json",
+          beforeSend:function()
+          {
+          $('#notification_area').html(loading());
+          },
+          success:function(data)
+          {
+          var output = '<hr />';
+          //console.log(data.length);
+          if(data.length > 0)
+          {
+            for(var count = 0; count < data.length; count++)
+            {
+            output += '<div class="row"><div class="col-md-7"><img src="'+data[count].profile_picture+'" class="img-circle" width="35" /> ' + data[count].first_name + ' ' +data[count].last_name + '</div>';
+
+            output += '<div class="col-md-5"><button type="button" name="accept_button" class="btn btn-success btn-xs accept_button" id="accept_button'+data[count].user_id+'" data-chat_request_id="'+data[count].chat_request_id+'">Accept</button></div><hr />';
+            }
+          }
+          else
+          {
+            output += '<div align="center"><b>No Data Found</b></div>';
+          }
+          //output += '</div><hr />';
+          $('#notification_area').html(output);
+          }
+        }) 
+        }
+
+        });
     </script>
 
   

@@ -22,14 +22,14 @@
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="<?php echo base_url('Home/home')?>">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> 
                     <a class="nav-link active" href="<?php echo base_url('Our_Practitioners/index')?>">Our Practitioners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('')?>">About Us</a>
+                    <a class="nav-link" href="<?php echo base_url('Home/about')?>">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('')?>">Contact Us</a>
+                    <a class="nav-link" href="<?php echo base_url('Home/contact')?>">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -198,5 +198,11 @@
         </footer>
     </section>
 
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script> -->
 </body>
 </html>

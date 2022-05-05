@@ -20,14 +20,14 @@
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="<?php echo base_url('Home/home')?>">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> 
                     <a class="nav-link active" href="<?php echo base_url('Our_Practitioners/index')?>">Our Practitioners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('')?>">About Us</a>
+                    <a class="nav-link" href="<?php echo base_url('Home/about')?>">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('')?>">Contact Us</a>
+                    <a class="nav-link" href="<?php echo base_url('Home/contact')?>">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,10 +49,10 @@
     <?php
                 session();
                 
-                $model = new \App\Models\practitionerProfileModel;
+                $model = new \App\Models\userModel;
                 $details = session()->get('id');
 
-                $query = $model->query("SELECT * FROM PractitionerProfile");
+                $query = $model->query("SELECT * FROM User WHERE type ='Practitioner'");
 
                 foreach($query->getResult() as $row){
                     
@@ -61,8 +61,8 @@
             <div class="card" >
                 <img src="<?= base_url('/assets/images/def.jpg')?>" width="253px" height="400px">                
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $row -> fullname?></h5>
-                    <p class="card-text"><?php echo $row -> practitionerid?></p>
+                    <h5 class="card-title"><?php echo $row -> firstname?></h5>
+                    <p class="card-text"><?php echo $row -> lastname?></p>
                     <p class="card-text"><?php echo $row -> qualification?></p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -79,120 +79,7 @@
                 
             }
             
-            ?>
-
-    <!-- <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px" >
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                 <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px" >
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="card" >
-            <img src="<?= base_url('/assets/images/cat.jpg')?>" width="253px" height="400px">
-            <div class="card-body">
-                <h5 class="card-title">Doctor Name</h5>
-                <p class="card-text">Qualifications</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Specialization</li>
-            </ul>
-            <div class="card-body">
-                <a href="<?php echo base_url('Appointment/appoint')?>" class="card-link">Appoint Now</a>
-            </div>
-        </div>
-    </div> -->
-    
+            ?>    
     </div>
 
 

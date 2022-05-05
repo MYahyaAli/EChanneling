@@ -53,6 +53,18 @@ class User extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=> 100
             ],
+            'specification'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>255
+            ],
+            'qualification'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>255,
+            ],
+            'upload'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>100,
+            ],
             'approved'=>[ // If the account is approved or not by the site admin
                 'type'=>'VARCHAR',
                 'constraint'=>60

@@ -10,7 +10,7 @@
         }
         protected $table = 'User'; // Give the table name
 
-        protected $allowedFields=['id','practitionerid', 'firstname', 'lastname', 'phone', 'email', 'password', 'nic', 'address','image', 'type','approved'];
+        protected $allowedFields=['id','practitionerid', 'firstname', 'lastname', 'phone', 'email', 'password', 'nic', 'address','image', 'type','specification','qualification','approved'];
 
         protected $returnType = 'App\Entities\User';
 

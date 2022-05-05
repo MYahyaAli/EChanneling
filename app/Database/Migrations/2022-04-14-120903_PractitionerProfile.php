@@ -15,23 +15,6 @@ class PractitionerProfile extends Migration
             'unsigned'=>true,
             'auto_increment'=>true
         ],
-        'specification'=>[
-            'type'=>'VARCHAR',
-            'constraint'=>255
-        ],
-        'qualification'=>[
-            'type'=>'VARCHAR',
-            'constraint'=>255,
-        ],
-        'practitionerid'=>[
-            'type'=>'VARCHAR',
-            'constraint'=>5,
-            'unique'=>true
-        ],
-        'fullname'=>[
-            'type'=>'VARCHAR',
-            'constraint'=>255,  
-        ],
        
     ]);
 

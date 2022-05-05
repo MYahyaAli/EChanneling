@@ -23,12 +23,38 @@ class Register extends BaseController
 
             $users = new \App\Entities\User ($this -> request ->getPost());
             $users -> password = password_hash($users->password, PASSWORD_DEFAULT); // Hashes the password
-#
-            $file = $this->request->getFile('image');
-            if ($file->isValid() && !$file->hasMoved()) {
-                $imgName= $file->getRandomName();
-                $file->move('uploads/',$imgName);
+
+            $image = $this->request->getFile('image');
+            if ($image->isValid() && !$image->hasMoved()) {
+                $imgName= $image->getRandomName();
+                $image->move('uploads/',$imgName);
             }
+            else{
+                    echo '
+                    <div class="alert2 text-danger">
+                        <strong> ERROR! </strong>
+                        Registeration was not successful! Check your entries! Check Image Upload!
+                    </div>';
+                    
+                    return view("Register");
+            }
+            
+
+            // $file = $this->request->getFile('upload');
+            // if ($file->isValid() && !$file->hasMoved()) {
+            //     $fileName= $image->getRandomName();
+            //     $file->move('uploads/DoctorDocs',$fileName);
+            // }
+            // else{
+            //         echo '
+            //         <div class="alert2 text-danger">
+            //             <strong> ERROR! </strong>
+            //             Registeration was not successful! Check your entries! Check Document!
+            //         </div>';
+                    
+            //         return view("Register");
+            // }
+
             
             $model->insert($users);
 
@@ -46,11 +72,10 @@ class Register extends BaseController
                             $query1 = $model -> query("SELECT * FROM user WHERE email = '$email'"); 
                             $row = $query1 -> getRow();
 
-                            $modelPrac= new \App\Models\practitionerProfileModel;
+                            $modelPrac= new \App\Models\userModel;
 
                             // Gets and uploads information to the profile database
                             $model2 = $modelPrac -> save([
-                                'practitioner_acc' => $row -> id,
                                 'specification' => '',
                                 'qualification' => '',
                             ]);

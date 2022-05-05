@@ -46,7 +46,7 @@ class Login extends BaseController
 		else {
 
 			// 	// Display error if login failed
-				echo '<div class="alert2">
+				echo '<div class="alert2 text-danger text-center">
 				<strong> ERROR! </strong> Login was not successful! Please double check your entries, or User does not exist!
 				</div>';
 				

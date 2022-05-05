@@ -6,7 +6,7 @@ class Our_Practitioners extends BaseController
 {
     public function index()
     {
-        $model= new \App\Models\practitionerProfileModel;
+        $model= new \App\Models\userModel;
 
         $user = $model;
 
@@ -14,11 +14,9 @@ class Our_Practitioners extends BaseController
             $session->set('ProfileID', $user -> id);
             $session->set('Specs', $user -> specification);
             $session->set('Qualify', $user -> qualification);
-            $session->set('Did', $user -> practitionerid);
-            $session->set('Did', $user -> fullname);
+            $session->set('fname', $user -> firstname);
+            $session->set('lname', $user -> lastname);
 
         return view('Our_Practitioners');
-
-        $model= new \App\Models\userModel;
     }
 }

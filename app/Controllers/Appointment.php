@@ -34,6 +34,18 @@ class Appointment extends BaseController
     }
 
 	public function appoint(){
+		
+		$model= new \App\Models\userModel;
+
+        $user = $model;
+
+            $session = session();
+            $session->set('ProfileID', $user -> id);
+            $session->set('Specs', $user -> specification);
+            $session->set('Qualify', $user -> qualification);
+            $session->set('fname', $user -> firstname);
+            $session->set('lname', $user -> lastname);
+
 		return view('Patient/Appoint_now');
 	}
 
