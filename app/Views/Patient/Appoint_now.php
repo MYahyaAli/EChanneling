@@ -201,8 +201,15 @@
     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $(document).ready(function(){
-
+            swal(
+                {
+                    title: "Appointment Booked!",
+                    text: "Your appointment is at",
+                    icon: "success",
+                    button: "Thank you",
+                });
         });
     </script> -->
+    
 </body>
 </html>

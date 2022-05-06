@@ -6,17 +6,6 @@ use App\Controllers\BaseController;
 
 class Chat extends BaseController {
 
-//  public function chat()
-//  {
-  
-//     //   $this->load->model('chat_model');
-//     // $chatModel = new \App\Models\chatmodel;  
-
-//   if(!$this->session->userdata('user_id'))
-//   {
-//    redirect('Login/index');
-//   }
-//  }
 
  public function search()
     {

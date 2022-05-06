@@ -76,9 +76,6 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo base_url('Home/home')?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('Our_Practitioners/index')?>">Our Practitioners</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url('Home/about')?>">About Us</a>
                 </li>
                 <li class="nav-item">
